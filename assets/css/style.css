@@ -187,23 +187,29 @@ body {
     color: var(--text-color);
     font-size: 16px;
 }
+
 .nav-item .nav-link.show,
 .nav-item .nav-link.active {
     color: var(--primary-color);
 }
+
 .navbar-nav {
     gap: 20px;
 }
+
 .navbar-nav .nav-item {
     margin-bottom: 0;
 }
-.theme__navbar .dropdown-menu{
+
+.theme__navbar .dropdown-menu {
     background: var(--primary-color);
 }
-.theme__navbar .dropdown-menu .dropdown-item{
+
+.theme__navbar .dropdown-menu .dropdown-item {
     color: white;
 }
-.theme__navbar .dropdown-menu .dropdown-item:hover{
+
+.theme__navbar .dropdown-menu .dropdown-item:hover {
     background: var(--primary-color);
 }
 
@@ -581,6 +587,14 @@ footer .footer__fourth_col .title {
 
 @media screen and (max-width: 768px) {
 
+    :root {
+    
+        /* typography */
+        --title-size: 32px;
+        --heading-size: 20px;
+    
+    }
+
     .section {
         padding: 50px 10px;
     }
@@ -613,4 +627,75 @@ footer .footer__fourth_col .title {
     footer .footer__first_col .address {
         width: 100%;
     }
+
+    /* --- navbar ---- */
+    .theme__navbar {
+        width: 90%;
+        left: 5%;
+    }
+    .theme__navbar .nav__logo {
+        height: 35px;
+    }
+    .theme__navbar .navbar-toggler-icon{
+        filter: invert(1);
+    }
+
+    /* ----- hero ---- */
+    .hero__data {
+        max-width: 90%;
+    }
+
+    .hero__data .title {
+        font-size: 35px;
+    }
+
+    .hero__data .text {
+        font-size: 16px;
+    }
+
+    .hero__data .hero__button_wrapper {
+        flex-direction: column;
+    }
+
+    .hero__float_data {
+        transform: scale(0.7);
+    }
+    .growth__data {
+        top: 12%;
+        left: 7%;
+    }
+    .project__data {
+        bottom: 6%;
+        right: 7%;
+    }
+
+    .hero__stat_wrapper{
+        padding: 10px 0;
+    }
+    .hero__stat_wrapper::after {
+        top: 98%;
+        left: 5%;
+        height: 2px;
+        width: 90%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    .hero__stat_wrapper h2 {
+        font-size: 30px;
+    }
+    .hero__stat_wrapper p {
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+
+
+    /* ----- red banner ---- */
+    .red__banner_data{
+        padding: 15px;
+    }
+    .red__banner_data .title{
+        font-size: 32px;
+    }
+
+
 }
